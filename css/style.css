@@ -100,7 +100,7 @@ th, td {
     padding: 15px;
 }
 
-.r1_c1:hover {
+.cell:hover {
     background-color: #aa00ff;
     color: #ffffff;
 }
