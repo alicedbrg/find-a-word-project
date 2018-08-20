@@ -1,0 +1,106 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+header {
+    background-color: #aa00ff;
+    height: 50px;
+    color: #fff;
+}
+
+nav {
+    float: right;
+    padding-right: 50px;
+    padding-top: 14px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 50px;
+}
+
+nav > a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.main {
+    background-image: url(../images/word-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #aa00ff;
+    border-color: #aa00ff;
+    padding: 10px 25px 10px 25px;
+}
+
+.btn-primary:hover {
+    color: #aa00ff;
+    background-color: #ffffff;
+    border-color: #aa00ff;
+}
+
+p {
+    text-align: center;
+    width: 50%;
+}
+
+/* -------------------------------------------------------- */
+/* Game Page CSS */
+
+#game-body {
+    background-color: #fafafa;
+}
+
+#game-body p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.grid-bg {
+    width: 530px;
+    height: 700px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.26);
+    float: none;
+    margin: 50px auto;
+
+}
+
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+
+
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-family: Avenir;
+    margin: 0 auto;
+    
+}
+
+th, td {
+    padding: 15px;
+}
+
+.r1_c1:hover {
+    background-color: #aa00ff;
+    color: #ffffff;
+}
