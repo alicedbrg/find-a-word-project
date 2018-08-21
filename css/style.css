@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-header {
+#landing-body header {
     background-color: #aa00ff;
     height: 50px;
     color: #fff;
@@ -62,6 +62,12 @@ nav > a:hover {
     background-color: #fbfbfb;
 }
 
+#game-body header {
+    height: 150px;
+    padding-top: 50px;
+
+}
+
 #game-body h1 {
     text-align: center;
     margin: 0 auto;
@@ -75,21 +81,29 @@ nav > a:hover {
     border-radius: 5px;
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.26);
     float: none;
-    margin: 50px auto;
 }
 
 #left-co {
-    margin-left: 50px;
-    padding-top: 20px;
-    width: 280px;
-    border: 1px solid #aa00ff;
+    padding-top: 50px;
 }
 
 .fa-clock, .fa-check {
     color: grey;
 }
 
+#active {
+    color: #aa00ff;
+}
 
+.selected {
+    background-color: #aa00ff;
+    color: #fff;
+}
+
+.found {
+    color: #aa00ff;
+    font-weight: bold;
+}
 
 h1 {
     font-size: 20px;
@@ -114,4 +128,8 @@ th, td {
 .cell:hover {
     background-color: #aa00ff;
     color: #ffffff;
+}
+
+#game-body button {
+    margin: 40px 40px;
 }

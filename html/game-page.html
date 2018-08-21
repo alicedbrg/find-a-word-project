@@ -10,28 +10,32 @@
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
-<body id="game-body">
-    <div>
+<body id="game-body" class="container">
+    <header>
     <h1>Guess a Word logo</h1>
-    </div>
+    </header>
 
-    <section id="left-co">
+    <div class="row">
+    <section id="left-co" class="col-sm-3">
         <div>
             <p><i class="far fa-clock"></i> Timer</p>
-            <p><i class="fas fa-check"></i> Apricot</p>
-            <p>Avocado</p>
-            <p>Coconut</p>
-            <p>Guava</p>
-            <p>Mango</p>
-            <p>Orange</p>
-            <p>Papaya</p>
-            <p>Pear</p>
-            <p>Pineapple</p>
+            <p><i class="fas fa-check"></i> Apple</p>
+            <p id="active"><i id="active" class="fas fa-check"></i> Apricot</p>
+            <p><i class="fas fa-check"></i> Avocado</p>
+            <p><i class="fas fa-check"></i> Coconut</p>
+            <p><i class="fas fa-check"></i> Guava</p>
+            <p><i class="fas fa-check"></i> Kiwi</p>
+            <p><i class="fas fa-check"></i> Mango</p>
+            <p><i class="fas fa-check"></i> Orange</p>
+            <p><i class="fas fa-check"></i> Papaya</p>
+            <p><i class="fas fa-check"></i> Pear</p>
+            <p><i class="fas fa-check"></i> Pineapple</p>
+            <p><i class="fas fa-check"></i> Pomegranate</p>
         </div>
         <a href="landing-page.html"><button type="btn" class="btn btn-primary">Restart</button></a>
     </section>
 
-    <section class="grid-bg">
+    <section class="grid-bg col-sm-6">
         <h1>🍍 🍓 Fruits 🥝 🍉</h1>
         <table class="fruits-grid">
             <tr>
@@ -145,13 +149,13 @@
             <tr>
                 <td class="cell">O</td>
                 <td class="cell">Z</td>
-                <td class="cell">A</td>
-                <td class="cell">P</td>
-                <td class="cell">R</td>
-                <td class="cell">I</td>
-                <td class="cell">C</td>
-                <td class="cell">O</td>
-                <td class="cell">T</td>
+                <td class="cell found">A</td>
+                <td class="cell found">P</td>
+                <td class="cell found">R</td>
+                <td class="cell found">I</td>
+                <td class="cell found">C</td>
+                <td class="cell found">O</td>
+                <td class="cell found">T</td>
                 <td class="cell">N</td>
             </tr>
             <tr>
@@ -168,8 +172,9 @@
             </tr>
         </table>
     </section>
+</div>
 
-    <section class="grid-bg">
+    <!-- <section class="grid-bg">
         <h1>🐰 🦄 Animals 🦁 🐷</h1>
             <table class="animals-grid">
                 <tr>
@@ -305,7 +310,7 @@
                     <td class="cell">R</td>
                 </tr>
             </table>
-        </section>
+        </section> -->
 
     <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"
