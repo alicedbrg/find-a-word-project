@@ -16,8 +16,8 @@ body {
 
 #landing-body .logo-purple {
     width: 300px;
-    margin-left: 380px;
-    margin-top: 170px;
+    display: block;
+    margin: 90px auto;
 }
 
 #landing-body .logo-white {
