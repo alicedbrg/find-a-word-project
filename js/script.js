@@ -160,3 +160,7 @@ function lose () {
         $(".overlay-lose").show();
     }
 };
+
+$(".main button").click(function (){
+    $(".categories").show();
+});
