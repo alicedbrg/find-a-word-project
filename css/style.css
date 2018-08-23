@@ -120,7 +120,8 @@ z-index: 1;
 
 #game-body .logo-purple {
     width: 250px;
-    margin-left: 430px;
+    display: block;
+    margin: 0 auto;
 }
 
 .grid-bg {

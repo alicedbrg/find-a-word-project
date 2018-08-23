@@ -143,7 +143,7 @@ function timerCountdown() {
     timer--;
     lose();
     $("#timer span").text(timer + "s");
-    if (timer <= 0){
+    if (timer <= 0 || foundWords.length === fruits.length){
       clearInterval(interval);
     }
   }, 1000);

@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 /* -------------------------------------------------------- */
-/* Animals Game Page CSS */
+/* beach Game Page CSS */
 
 #game-body {
     background-color: #fbfbfb;
@@ -18,7 +18,8 @@ body {
 
 #game-body .logo-purple {
     width: 250px;
-    margin-left: 430px;
+    display: block;
+    margin: 0 auto;
 }
 
 .grid-bg {
@@ -36,7 +37,7 @@ body {
     padding-top: 50px;
 }
 
-.animals-list .fa-clock, .fa-check {
+.beach-list .fa-clock, .fa-check {
     color: grey;
 }
 
@@ -96,12 +97,12 @@ th, td {
     margin: 40px 40px;
 }
 
-.animals-list {
+.beach-list {
     list-style: none;
     color: grey;
 }
 
-.animals-list li {
+.beach-list li {
     padding-top: 15px;
 }
 

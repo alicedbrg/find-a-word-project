@@ -1,5 +1,5 @@
 var beach = ['SUNBATH', 'CRABS', 'OCEAN', 'SAND', 'SWIMMING', 'VOLLEYBALL', 'TOWELL', 'FLIPFLOP', 'PALMTREE', 'JELLYFISH', 'SUNBURN'];
-var wordClasses = ['chicken', 'cow', 'crocodile', 'donkey', 'duck', 'fish', 'flamingo', 'goat', 'horse', 'mouse', 'sheep'];
+var wordClasses = ['sunbath', 'crabs', 'ocean', 'sand', 'swimming', 'volleyball', 'towell', 'flipflop', 'palmtree', 'jellyfish', 'sunburn'];
 var clickedClasses = [];
 var letters = [];
 var myWord = [];
@@ -8,7 +8,7 @@ var foundWords = [];
 //run Timer
 timerCountdown();
 
-$(".animals-grid td").click(function () {
+$(".beach-grid td").click(function () {
     
     var myLetter = [];
         if ($(this).hasClass("selected")) {
@@ -47,115 +47,107 @@ function validerMot() {
     // ON VALIDATION
     myWord = letters.join('');
     console.log(myWord)
-    if (animals.includes(myWord) && (letters.length === clickedClasses.length)) {
+    if (beach.includes(myWord) && (letters.length === clickedClasses.length)) {
         switch (myWord) {
-            case "CHICKEN":
-            $(".chicken").removeClass("selected");
-            $(".chicken").addClass("found");
-            var animalName = $(".animals-list li:contains('Chicken')")
+            case "SUNBATH":
+            $(".sunbath").removeClass("selected");
+            $(".sunbath").addClass("found");
+            var animalName = $(".beach-list li:contains('Sunbath')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "COW":
-            $(".cow").removeClass("selected");
-            $(".cow").addClass("found");
-            var animalName = $(".animals-list li:contains('Cow')")
+            case "CRABS":
+            $(".crabs").removeClass("selected");
+            $(".crabs").addClass("found");
+            var animalName = $(".beach-list li:contains('Crabs')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "CROCODILE":
-            $(".crocodile").removeClass("selected")
-            $(".crocodile").addClass("found")
-            var animalName = $(".animals-list li:contains('Crocodile')")
+            case "OCEAN":
+            $(".ocean").removeClass("selected")
+            $(".ocean").addClass("found")
+            var animalName = $(".beach-list li:contains('Ocean')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "DONKEY":
-            $(".donkey").removeClass("selected")
-            $(".donkey").addClass("found")
-            var animalName = $(".animals-list li:contains('Donkey')")
+            case "SAND":
+            $(".sand").removeClass("selected")
+            $(".sand").addClass("found")
+            var animalName = $(".beach-list li:contains('Sand')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "DUCK":
-            $(".duck").removeClass("selected")
-            $(".duck").addClass("found")
-            var animalName = $(".animals-list li:contains('Duck')")
+            case "SWIMMING":
+            $(".swimming").removeClass("selected")
+            $(".swimming").addClass("found")
+            var animalName = $(".beach-list li:contains('Swimming')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "FISH":
-            $(".fish").removeClass("selected")
-            $(".fish").addClass("found")
-            var animalName = $(".animals-list li:contains('Fish')")
+            case "VOLLEYBALL":
+            $(".volleyball").removeClass("selected")
+            $(".volleyball").addClass("found")
+            var animalName = $(".beach-list li:contains('Volleyball')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "FLAMINGO":
-            $(".flamingo").removeClass("selected")
-            $(".flamingo").addClass("found")
-            var animalName = $(".animals-list li:contains('Flamingo')")
+            case "TOWELL":
+            $(".towell").removeClass("selected")
+            $(".towell").addClass("found")
+            var animalName = $(".beach-list li:contains('Towell')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "GOAT":
-            $(".goat").removeClass("selected")
-            $(".goat").addClass("found")
-            var animalName = $(".animals-list li:contains('Goat')")
+            case "FLIPFLOP":
+            $(".flipflop").removeClass("selected")
+            $(".flipflop").addClass("found")
+            var animalName = $(".beach-list li:contains('Flipflop')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "HORSE":
-            $(".horse").removeClass("selected")
-            $(".horse").addClass("found")
-            var animalName = $(".animals-list li:contains('Horse')")
+            case "PALMTREE":
+            $(".palmtree").removeClass("selected")
+            $(".palmtree").addClass("found")
+            var animalName = $(".beach-list li:contains('Palmtree')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "MOUSE":
-            $(".mouse").removeClass("selected")
-            $(".mouse").addClass("found")
-            var animalName = $(".animals-list li:contains('Mouse')")
+            case "JELLYFISH":
+            $(".jellyfish").removeClass("selected")
+            $(".jellyfish").addClass("found")
+            var animalName = $(".beach-list li:contains('Jellyfish')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "SHEEP":
-            $(".sheep").removeClass("selected")
-            $(".sheep").addClass("found")
-            var animalName = $(".animals-list li:contains('Sheep')")
+            case "SUNBURN":
+            $(".sunburn").removeClass("selected")
+            $(".sunburn").addClass("found")
+            var animalName = $(".beach-list li:contains('Sunburn')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
             break;
 
-            case "ZEBRA":
-            $(".zebra").removeClass("selected")
-            $(".zebra").addClass("found")
-            var animalName = $(".animals-list li:contains('Zebra')")
-            animalName.addClass('active')
-            var animalIcon = animalName.children();
-            animalIcon.addClass('active')
-            break;
         }
         foundWords.push(myWord)
         win();
@@ -170,14 +162,14 @@ function timerCountdown() {
     timer--;
     lose();
     $("#timer span").text(timer + "s");
-    if (timer <= 0){
+    if (timer <= 0 || foundWords.length === beach.length){
       clearInterval(interval);
     }
   }, 1000);
 }
 
 function win () {
-    if (foundWords.length === animals.length) {
+    if (foundWords.length === beach.length) {
         $(".overlay-win").show();
     }
 };
