@@ -113,8 +113,8 @@ z-index: 1;
 }
 
 #game-body header {
-    height: 150px;
-    padding-top: 50px;
+    height: 100px;
+    padding-top: 10px;
 
 }
 
@@ -141,7 +141,7 @@ z-index: 1;
     color: grey;
 }
 
-#active {
+.active {
     color: #aa00ff;
 }
 
@@ -182,4 +182,13 @@ th, td {
 
 #game-body button {
     margin: 40px 40px;
+}
+
+.fruits-list {
+    list-style: none;
+    color: grey;
+}
+
+.fruits-list li {
+    padding-top: 15px;
 }
