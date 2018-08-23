@@ -175,6 +175,15 @@ th, td {
 #game-body .playagain {
     margin-left: 665px;
     margin-top: 30px;
+    background-color: #aa00ff;
+    border-color: #aa00ff;
+    padding: 10px 25px 10px 25px;
+}
+
+#game-body .playagain:hover {
+    color: #aa00ff;
+    background-color: #ffffff;
+    border-color: #aa00ff;
 }
 
 .overlay-lose .fa-clock {
