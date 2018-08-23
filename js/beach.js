@@ -9,7 +9,7 @@ var foundWords = [];
 timerCountdown();
 
 $(".beach-grid td").click(function () {
-    
+    playSound() 
     var myLetter = [];
         if ($(this).hasClass("selected")) {
             $(this).removeClass("selected");
@@ -38,7 +38,8 @@ $(".beach-grid td").click(function () {
                     }
             }
         }
-            validerMot()  
+            validerMot() 
+            
 });
 
 
@@ -187,4 +188,10 @@ function lose () {
     if (timer == 0) {
         $(".overlay-lose").show();
     }
+};
+
+
+function playSound() {
+    var sound = document.querySelector(".sound");
+    sound.play();
 };
