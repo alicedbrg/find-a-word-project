@@ -1,5 +1,5 @@
-var beach = ['SUNBATH', 'CRABS', 'OCEAN', 'SAND', 'SWIMMING', 'VOLLEYBALL', 'TOWELL', 'FLIPFLOP', 'PALMTREE', 'JELLYFISH', 'SUNBURN'];
-var wordClasses = ['sunbath', 'crabs', 'ocean', 'sand', 'swimming', 'volleyball', 'towell', 'flipflop', 'palmtree', 'jellyfish', 'sunburn'];
+var beach = ['SUNBATH', 'CRABS', 'OCEAN', 'SAND', 'SWIMMING', 'VOLLEYBALL', 'TOWELL', 'FLIPFLOP', 'PALMTREE', 'JELLYFISH', 'SUNBURN', 'SCUBA'];
+var wordClasses = ['sunbath', 'crabs', 'ocean', 'sand', 'swimming', 'volleyball', 'towell', 'flipflop', 'palmtree', 'jellyfish', 'sunburn', 'scuba'];
 var clickedClasses = [];
 var letters = [];
 var myWord = [];
@@ -143,6 +143,15 @@ function validerMot() {
             $(".sunburn").removeClass("selected")
             $(".sunburn").addClass("found")
             var animalName = $(".beach-list li:contains('Sunburn')")
+            animalName.addClass('active')
+            var animalIcon = animalName.children();
+            animalIcon.addClass('active')
+            break;
+
+            case "SCUBA":
+            $(".scuba").removeClass("selected")
+            $(".scuba").addClass("found")
+            var animalName = $(".beach-list li:contains('Scuba')")
             animalName.addClass('active')
             var animalIcon = animalName.children();
             animalIcon.addClass('active')
