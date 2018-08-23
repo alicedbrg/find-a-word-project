@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find a Word</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animals.css">
+
+</head>
+<body id="game-body" class="container">
+    <header>
+    <img class="logo-purple" src="../images/find-word-logo-purple.png" alt="Logo-find-word">
+    </header>
+
+    <div class="row">
+    <section id="left-co" class="col-sm-3">
+        <div>
+            <ul class="animals-list">
+                <li id="timer"><i class="far fa-clock"></i><span></span></li>
+                <li><i class="fas fa-check"></i> Chicken</li>
+                <li><i class="fas fa-check"></i> Cow</li>
+                <li><i class="fas fa-check"></i> Crocodile</li>
+                <li><i class="fas fa-check"></i> Donkey</li>
+                <li><i class="fas fa-check"></i> Duck</li>
+                <li><i class="fas fa-check"></i> Fish</li>
+                <li><i class="fas fa-check"></i> Flamingo</li>
+                <li><i class="fas fa-check"></i> Goat</li>
+                <li><i class="fas fa-check"></i> Horse</li>
+                <li><i class="fas fa-check"></i> Mouse</li>
+                <li><i class="fas fa-check"></i> Sheep</li>
+                <li><i class="fas fa-check"></i> Zebra</li>
+            </ul>
+        </div>
+        <a href="index.html"><button type="btn" class="btn btn-primary restart">Restart</button></a>
+    </section>
+
+<section class="grid-bg">
+    <h1>🐰 🦄 Animals 🦁 🐷</h1>
+        <table class="animals-grid">
+            <tr>
+                <td class="cell">U</td>
+                <td class="cell">P</td>
+                <td class="cell mouse">M</td>
+                <td class="cell mouse">O</td>
+                <td class="cell mouse">U</td>
+                <td class="cell mouse">S</td>
+                <td class="cell mouse">E</td>
+                <td class="cell">T</td>
+                <td class="cell">U</td>
+                <td class="cell">B</td>
+            </tr>
+            <tr>
+                <td class="cell">A</td>
+                <td class="cell">I</td>
+                <td class="cell">S</td>
+                <td class="cell">S</td>
+                <td class="cell goat">G</td>
+                <td class="cell goat">O</td>
+                <td class="cell goat">A</td>
+                <td class="cell goat">T</td>
+                <td class="cell">O</td>
+                <td class="cell">S</td>
+            </tr>
+            <tr>
+                <td class="cell">B</td>
+                <td class="cell">G</td>
+                <td class="cell duck">D</td>
+                <td class="cell duck">U</td>
+                <td class="cell duck">C</td>
+                <td class="cell duck">K</td>
+                <td class="cell">T</td>
+                <td class="cell">K</td>
+                <td class="cell">M</td>
+                <td class="cell">O</td>
+            </tr>
+            <tr>
+                <td class="cell">I</td>
+                <td class="cell">I</td>
+                <td class="cell sheep">S</td>
+                <td class="cell sheep">H</td>
+                <td class="cell sheep">E</td>
+                <td class="cell sheep">E</td>
+                <td class="cell sheep">P</td>
+                <td class="cell">C</td>
+                <td class="cell">E</td>
+                <td class="cell">G</td>
+            </tr>
+            <tr>
+                <td class="cell">R</td>
+                <td class="cell">M</td>
+                <td class="cell horse">H</td>
+                <td class="cell horse">O</td>
+                <td class="cell horse">R</td>
+                <td class="cell horse">S</td>
+                <td class="cell horse">E</td>
+                <td class="cell">A</td>
+                <td class="cell">G</td>
+                <td class="cell">O</td>
+            </tr>
+            <tr>
+                <td class="cell">D</td>
+                <td class="cell">W</td>
+                <td class="cell">U</td>
+                <td class="cell fish">F</td>
+                <td class="cell fish">I</td>
+                <td class="cell fish">S</td>
+                <td class="cell fish">H</td>
+                <td class="cell">Y</td>
+                <td class="cell">R</td>
+                <td class="cell">S</td>
+            </tr>
+            <tr>
+                <td class="cell chicken">C</td>
+                <td class="cell chicken">H</td>
+                <td class="cell chicken">I</td>
+                <td class="cell chicken">C</td>
+                <td class="cell chicken">K</td>
+                <td class="cell chicken">E</td>
+                <td class="cell chicken">N</td>
+                <td class="cell">F</td>
+                <td class="cell">U</td>
+                <td class="cell">O</td>
+            </tr>
+            <tr>
+                <td class="cell cow">C</td>
+                <td class="cell cow">O</td>
+                <td class="cell cow">W</td>
+                <td class="cell">N</td>
+                <td class="cell donkey">D</td>
+                <td class="cell donkey">O</td>
+                <td class="cell donkey">N</td>
+                <td class="cell donkey">K</td>
+                <td class="cell donkey">E</td>
+                <td class="cell donkey">Y</td>
+            </tr>
+            <tr>
+                <td class="cell">W</td>
+                <td class="cell flamingo">F</td>
+                <td class="cell flamingo">L</td>
+                <td class="cell flamingo">A</td>
+                <td class="cell flamingo">M</td>
+                <td class="cell flamingo">I</td>
+                <td class="cell flamingo">N</td>
+                <td class="cell flamingo">G</td>
+                <td class="cell flamingo">O</td>
+                <td class="cell">E</td>
+            </tr>
+            <tr>
+                <td class="cell">O</td>
+                <td class="cell crocodile">E</td>
+                <td class="cell crocodile">L</td>
+                <td class="cell crocodile">I</td>
+                <td class="cell crocodile">D</td>
+                <td class="cell crocodile">O</td>
+                <td class="cell crocodile">C</td>
+                <td class="cell crocodile">O</td>
+                <td class="cell crocodile">R</td>
+                <td class="cell crocodile">C</td>
+            </tr>
+            <tr>
+                <td class="cell">A</td>
+                <td class="cell">B</td>
+                <td class="cell">R</td>
+                <td class="cell">H</td>
+                <td class="cell zebra">Z</td>
+                <td class="cell zebra">E</td>
+                <td class="cell zebra">B</td>
+                <td class="cell zebra">R</td>
+                <td class="cell zebra">A</td>
+                <td class="cell">R</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="overlay-win">
+            <div class="overlay-content-win">
+                <i class="fas fa-check"></i>
+                <h1>AWESOME!</h1>
+                <h2>You did it.</h2>
+                <a href="landing-page.html"><button class="btn btn-primary playagain">Play again</button></a>
+            </div>
+        </div>
+        
+        <div class="overlay-lose">
+            <div class="overlay-content-lose">
+                <i class="fas fa-clock"></i>
+                <h1>TIME'S UP!</h1>
+                <h2>Oh, well...</h2>
+                <a href="landing-page.html"><button class="btn btn-primary playagain">Try again</button></a>
+            </div>
+        </div>
+
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/animals.js"></script>
+</body>
+</html>

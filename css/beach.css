@@ -3,110 +3,8 @@ body {
     height: 100vh;
     margin: auto;
 }
-
-#landing-body header {
-    background-color: #aa00ff;
-    height: 50px;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-#landing-body .logo-purple {
-    width: 300px;
-    margin-left: 380px;
-    margin-top: 170px;
-}
-
-#landing-body .logo-white {
-    margin-left: 50px;
-    vertical-align: top;
-    height: 60px;
-}
-
-nav {
-    float: right;
-    padding-right: 50px;
-    padding-top: 14px;
-}
-
-nav > a {
-    text-decoration: none;
-    color: #fff;
-    margin-left: 50px;
-}
-
-nav > a:hover {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-#landing-body .col-sm-3 {
-    justify-content: space-around;
-    width: 150px;
-}
-
-.bg-image {
-background-image: url(../images/word-bg.jpg);
-background-size: cover;
-display: block;
-filter: blur(5px);
--webkit-filter: blur(5px);
-height: 800px;
-left: 0;
-position: fixed;
-right: 0;
-z-index: 1;
-}
-
-.content {
-    top: 10px;
-    left: 0;
-    position: fixed;
-    margin-left: 20px;
-    margin-right: 20px;
-    right: 0;
-    z-index: 2;
-    padding: 0 10px;
-}
-
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    background-color: #aa00ff;
-    border-color: #aa00ff;
-    padding: 10px 25px 10px 25px;
-}
-
-.btn-primary:hover {
-    color: #aa00ff;
-    background-color: #ffffff;
-    border-color: #aa00ff;
-}
-
-#landing-body p {
-    text-align: center;
-    width: 50%;
-    margin-left: 375px;
-    margin-top: 70px;
-    line-height: 35px;
-}
-
-.landing-btn {
-    margin-left: 650px;
-    margin-top: 350px;
-}
-
 /* -------------------------------------------------------- */
-/* Game Page CSS */
+/* Animals Game Page CSS */
 
 #game-body {
     background-color: #fbfbfb;
@@ -131,14 +29,27 @@ z-index: 1;
     border-radius: 5px;
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.26);
     float: none;
+    margin-left: 30px;
 }
 
 #left-co {
     padding-top: 50px;
 }
 
-.fruits-list .fa-clock, .fa-check {
+.animals-list .fa-clock, .fa-check {
     color: grey;
+}
+
+.btn {
+    background-color: #aa00ff;
+    border-color: #aa00ff;
+    padding: 10px 25px 10px 25px;
+}
+
+.btn-primary:hover {
+    color: #aa00ff;
+    background-color: #ffffff;
+    border-color: #aa00ff;
 }
 
 .active {
@@ -185,12 +96,12 @@ th, td {
     margin: 40px 40px;
 }
 
-.fruits-list {
+.animals-list {
     list-style: none;
     color: grey;
 }
 
-.fruits-list li {
+.animals-list li {
     padding-top: 15px;
 }
 
@@ -203,11 +114,6 @@ th, td {
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
-
-/* .overlay-content {
-    padding-top: 200px;
-    padding-bottom: 200px;
-} */
 
 .overlay-win {
     display: none;

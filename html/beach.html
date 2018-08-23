@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find a Word</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/beach.css">
+
+</head>
+<body id="game-body" class="container">
+    <header>
+    <img class="logo-purple" src="../images/find-word-logo-purple.png" alt="Logo-find-word">
+    </header>
+
+    <div class="row">
+    <section id="left-co" class="col-sm-3">
+        <div>
+            <ul class="beach-list">
+                <li id="timer"><i class="far fa-clock"></i><span></span></li>
+                <li><i class="fas fa-check"></i> Sunbath</li>
+                <li><i class="fas fa-check"></i> Crabs</li>
+                <li><i class="fas fa-check"></i> Ocean</li>
+                <li><i class="fas fa-check"></i> Sand</li>
+                <li><i class="fas fa-check"></i> Swimming</li>
+                <li><i class="fas fa-check"></i> Volleyball</li>
+                <li><i class="fas fa-check"></i> Towell</li>
+                <li><i class="fas fa-check"></i> Flipflop</li>
+                <li><i class="fas fa-check"></i> Palmtree</li>
+                <li><i class="fas fa-check"></i> Jellyfish</li>
+                <li><i class="fas fa-check"></i> Sunburn</li>
+            </ul>
+        </div>
+        <a href="index.html"><button type="btn" class="btn btn-primary restart">Restart</button></a>
+    </section>
+
+<section class="grid-bg">
+    <h1>🌴 ☀️ Beach 🏖 🏄🏽‍</h1>
+        <table class="beach-grid">
+            <tr>
+                <td class="cell sunbath">S</td>
+                <td class="cell sunbath">U</td>
+                <td class="cell sunbath">N</td>
+                <td class="cell sunbath">B</td>
+                <td class="cell sunbath">A</td>
+                <td class="cell sunbath">T</td>
+                <td class="cell sunbath">H</td>
+                <td class="cell">Z</td>
+                <td class="cell">L</td>
+                <td class="cell">B</td>
+            </tr>
+            <tr>
+                <td class="cell">A</td>
+                <td class="cell">I</td>
+                <td class="cell">S</td>
+                <td class="cell crabs">C</td>
+                <td class="cell crabs">R</td>
+                <td class="cell crabs">A</td>
+                <td class="cell crabs">B</td>
+                <td class="cell crabs">S</td>
+                <td class="cell">O</td>
+                <td class="cell">S</td>
+            </tr>
+            <tr>
+                <td class="cell">B</td>
+                <td class="cell">G</td>
+                <td class="cell swimming">G</td>
+                <td class="cell swimming">N</td>
+                <td class="cell swimming">I</td>
+                <td class="cell swimming">M</td>
+                <td class="cell swimming">M</td>
+                <td class="cell swimming">I</td>
+                <td class="cell swimming">W</td>
+                <td class="cell swimming">S</td>
+            </tr>
+            <tr>
+                <td class="cell">I</td>
+                <td class="cell ocean">O</td>
+                <td class="cell ocean">C</td>
+                <td class="cell ocean">E</td>
+                <td class="cell ocean">A</td>
+                <td class="cell ocean">N</td>
+                <td class="cell">P</td>
+                <td class="cell">C</td>
+                <td class="cell">E</td>
+                <td class="cell">G</td>
+            </tr>
+            <tr>
+                <td class="cell sand">S</td>
+                <td class="cell sand">A</td>
+                <td class="cell sand">N</td>
+                <td class="cell sand">D</td>
+                <td class="cell">R</td>
+                <td class="cell">S</td>
+                <td class="cell">E</td>
+                <td class="cell">A</td>
+                <td class="cell">G</td>
+                <td class="cell">O</td>
+            </tr>
+            <tr>
+                <td class="cell volleyball">V</td>
+                <td class="cell volleyball">O</td>
+                <td class="cell volleyball">L</td>
+                <td class="cell volleyball">L</td>
+                <td class="cell volleyball">E</td>
+                <td class="cell volleyball">Y</td>
+                <td class="cell volleyball">B</td>
+                <td class="cell volleyball">A</td>
+                <td class="cell volleyball">L</td>
+                <td class="cell volleyball">L</td>
+            </tr>
+            <tr>
+                <td class="cell">C</td>
+                <td class="cell">H</td>
+                <td class="cell towell">T</td>
+                <td class="cell towell">O</td>
+                <td class="cell towell">W</td>
+                <td class="cell towell">E</td>
+                <td class="cell towell">L</td>
+                <td class="cell towell">L</td>
+                <td class="cell">U</td>
+                <td class="cell">O</td>
+            </tr>
+            <tr>
+                <td class="cell">C</td>
+                <td class="cell flipflop">F</td>
+                <td class="cell flipflop">L</td>
+                <td class="cell flipflop">I</td>
+                <td class="cell flipflop">P</td>
+                <td class="cell flipflop">F</td>
+                <td class="cell flipflop">L</td>
+                <td class="cell flipflop">O</td>
+                <td class="cell flipflop">P</td>
+                <td class="cell">Y</td>
+            </tr>
+            <tr>
+                <td class="cell palmtree">P</td>
+                <td class="cell palmtree">A</td>
+                <td class="cell palmtree">L</td>
+                <td class="cell palmtree">M</td>
+                <td class="cell palmtree">T</td>
+                <td class="cell palmtree">R</td>
+                <td class="cell palmtree">E</td>
+                <td class="cell palmtree">E</td>
+                <td class="cell">O</td>
+                <td class="cell">E</td>
+            </tr>
+            <tr>
+                <td class="cell">O</td>
+                <td class="cell jellyfish">J</td>
+                <td class="cell jellyfish">E</td>
+                <td class="cell jellyfish">L</td>
+                <td class="cell jellyfish">L</td>
+                <td class="cell jellyfish">Y</td>
+                <td class="cell jellyfish">F</td>
+                <td class="cell jellyfish">I</td>
+                <td class="cell jellyfish">S</td>
+                <td class="cell jellyfish">H</td>
+            </tr>
+            <tr>
+                <td class="cell">A</td>
+                <td class="cell">B</td>
+                <td class="cell sunburn">N</td>
+                <td class="cell sunburn">R</td>
+                <td class="cell sunburn">U</td>
+                <td class="cell sunburn">B</td>
+                <td class="cell sunburn">N</td>
+                <td class="cell sunburn">U</td>
+                <td class="cell sunburn">S</td>
+                <td class="cell">R</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="overlay-win">
+            <div class="overlay-content-win">
+                <i class="fas fa-check"></i>
+                <h1>AWESOME!</h1>
+                <h2>You did it.</h2>
+                <a href="landing-page.html"><button class="btn btn-primary playagain">Play again</button></a>
+            </div>
+        </div>
+        
+        <div class="overlay-lose">
+            <div class="overlay-content-lose">
+                <i class="fas fa-clock"></i>
+                <h1>TIME'S UP!</h1>
+                <h2>Oh, well...</h2>
+                <a href="landing-page.html"><button class="btn btn-primary playagain">Try again</button></a>
+            </div>
+        </div>
+
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/beach.js"></script>
+</body>
+</html>

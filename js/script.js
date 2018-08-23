@@ -1,10 +1,12 @@
 var fruits = ['APRICOT', 'AVOCADO', 'COCONUT', 'GUAVA', 'MANGO', 'ORANGE', 'PAPAYA', 'PEAR', 'PINEAPPLE'];
-var animals = ['a', 'b', 'c', 'd', 'e'];
 var wordClasses = ['coconut', 'papaya', 'avocado', 'orange', 'mango', 'pear', 'guava', 'apricot', 'pineapple'];
 var clickedClasses = [];
 var letters = [];
 var myWord = [];
+var foundWords = [];
 
+//run Timer
+timerCountdown();
 
 $(".fruits-grid td").click(function () {
     
@@ -50,78 +52,111 @@ function validerMot() {
             case "COCONUT":
             $(".coconut").removeClass("selected");
             $(".coconut").addClass("found");
-            // $(".fruits-list li").html('Coconut').addClass('active')
+            var fruitName = $(".fruits-list li:contains('Coconut')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "PAPAYA":
             $(".papaya").removeClass("selected");
             $(".papaya").addClass("found");
+            var fruitName = $(".fruits-list li:contains('Papaya')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "AVOCADO":
             $(".avocado").removeClass("selected")
             $(".avocado").addClass("found")
-            // $(".fruits-list li").html('Avocado').addClass('active')
+            var fruitName = $(".fruits-list li:contains('Avocado')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "ORANGE":
             $(".orange").removeClass("selected")
             $(".orange").addClass("found")
+            var fruitName = $(".fruits-list li:contains('Orange')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "MANGO":
             $(".mango").removeClass("selected")
             $(".mango").addClass("found")
+            var fruitName = $(".fruits-list li:contains('Mango')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "PEAR":
             $(".pear").removeClass("selected")
             $(".pear").addClass("found")
+            var fruitName = $(".fruits-list li:contains('Pear')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "GUAVA":
-            $(".guaya").removeClass("selected")
-            $(".guaya").addClass("found")
+            $(".guava").removeClass("selected")
+            $(".guava").addClass("found")
+            var fruitName = $(".fruits-list li:contains('Guava')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
+            break;
+
+            case "APRICOT":
+            $(".apricot").removeClass("selected")
+            $(".apricot").addClass("found")
+            var fruitName = $(".fruits-list li:contains('Apricot')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
 
             case "PINEAPPLE":
             $(".pineapple").removeClass("selected")
             $(".pineapple").addClass("found")
+            var fruitName = $(".fruits-list li:contains('Pineapple')")
+            fruitName.addClass('active')
+            var fruitIcon = fruitName.children();
+            fruitIcon.addClass('active')
             break;
         }
+        foundWords.push(myWord)
+        win();
         letters = [];
         clickedClasses = [];
     }
-    
 }
 
-// trouver element de la liste qui a la meme valeur html et lui ajouter classe .active
-// childNode pour cibler icone de chaque mot de la liste
+var timer = 61;
+function timerCountdown() {
+  var interval = setInterval(function() {
+    timer--;
+    lose();
+    $("#timer span").text(timer + "s");
+    if (timer <= 0){
+      clearInterval(interval);
+    }
+  }, 1000);
+}
 
+function win () {
+    if (foundWords.length === fruits.length) {
+        $(".overlay-win").show();
+    }
+};
 
-
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 870));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="timer"
-  document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
+function lose () {
+    if (timer == 0) {
+        $(".overlay-lose").show();
+    }
+};
