@@ -131,6 +131,10 @@ th, td {
 .overlay-content-win {
     color: white;
     margin-top: 251px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-win h1 {
@@ -147,7 +151,6 @@ th, td {
 .overlay-win .fa-check {
     color: white;
     width: 50px;
-    margin-left: 705px;
     font-size: 40px;
 
 }
@@ -165,6 +168,10 @@ th, td {
 .overlay-content-lose {
     color: white;
     margin-top: 251px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-lose h1 {
@@ -179,7 +186,6 @@ th, td {
 }
 
 #game-body .playagain {
-    margin-left: 665px;
     margin-top: 30px;
     background-color: #aa00ff;
     border-color: #aa00ff;
@@ -195,7 +201,6 @@ th, td {
 .overlay-lose .fa-clock {
     color: white;
     width: 50px;
-    margin-left: 705px;
     font-size: 40px;
 }
 

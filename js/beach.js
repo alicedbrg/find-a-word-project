@@ -166,7 +166,7 @@ function validerMot() {
     }
 }
 
-var timer = 2;
+var timer = 61;
 function timerCountdown() {
   var interval = setInterval(function() {
     timer--;
