@@ -122,14 +122,18 @@ th, td {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0, 0.8);
 }
 
 .overlay-content-win {
     color: white;
     margin-top: 251px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-win h1 {
@@ -146,7 +150,6 @@ th, td {
 .overlay-win .fa-check {
     color: white;
     width: 50px;
-    margin-left: 705px;
     font-size: 40px;
 
 }
@@ -156,14 +159,18 @@ th, td {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0, 0.8);
 }
 
 .overlay-content-lose {
     color: white;
     margin-top: 251px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-lose h1 {
@@ -178,14 +185,14 @@ th, td {
 }
 
 #game-body .playagain {
-    margin-left: 665px;
+    /* margin-left: 665px; */
     margin-top: 30px;
 }
 
 .overlay-lose .fa-clock {
     color: white;
     width: 50px;
-    margin-left: 705px;
+    /* margin-left: 705px; */
     font-size: 40px;
 }
 
