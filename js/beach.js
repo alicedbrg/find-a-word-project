@@ -9,7 +9,7 @@ var foundWords = [];
 timerCountdown();
 
 $(".beach-grid td").click(function () {
-    playSound() 
+    playSound()
     var myLetter = [];
         if ($(this).hasClass("selected")) {
             $(this).removeClass("selected");
