@@ -142,3 +142,8 @@ z-index: 1;
     text-decoration: none;
     color: white;
 }
+
+.categories a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+}
